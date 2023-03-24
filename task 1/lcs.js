@@ -1,0 +1,1 @@
+function f(a){s=a.reduce((a,b)=>(a.length<=b.length?a:b));m=s.length;for(l=m;l>=0;l--){for(g=0;g<=m-l;g++){c=s.substring(g,g+l);if(a.every(e=>~e.indexOf(c))){return c;}}}return '';}j=process.argv;j.length>2?console.log(f(j.slice(2))):console.log('')
